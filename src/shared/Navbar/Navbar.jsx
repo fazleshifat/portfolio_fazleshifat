@@ -8,6 +8,7 @@ const Navbar = () => {
     const links = <>
         <li><HashLink smooth to="/#">Home</HashLink></li>
         <li><HashLink smooth to="/#aboutMe">About Me</HashLink></li>
+        <li><HashLink smooth to="/#technology">Technology</HashLink></li>
         <li><HashLink smooth to="/#projects">Projects</HashLink></li>
         <li><HashLink smooth to="/#education">Education</HashLink></li>
         <li><HashLink smooth to="/#experience">Experience</HashLink></li>
@@ -40,7 +41,7 @@ const Navbar = () => {
                 </ul>
 
                 <ThemeToggle></ThemeToggle>
-                <a className="btn">Resume</a>
+                <Link target='_blank' to='https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing' className="btn rounded-full btn-outline">Resume</Link>
             </div>
         </div>
     );

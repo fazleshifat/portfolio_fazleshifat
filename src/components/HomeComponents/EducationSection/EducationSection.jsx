@@ -7,7 +7,7 @@ const educationData = [
         title: "Diploma in Engineering",
         subject: "Computer Science & Technology",
         institution: "Feni Computer Institute",
-        duration: "2021 - Present",
+        duration: "2024",
         cgpa: "3.41",
         description: "Focused on web development, algorithms, and system design. Participated in programming contests and contributed to open-source projects.",
     },

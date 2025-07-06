@@ -28,13 +28,13 @@ const Banner = () => {
                     </p>
                     {/* Social Links */}
                     <div className="flex gap-5 mt-4">
-                        <a href="https://github.com/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
+                        <a href="https://github.com/fazleshifat" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
                             <FaGithub />
                         </a>
-                        <a href="https://linkedin.com/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
+                        <a href="https://www.linkedin.com/in/fazle-shifat-5490a8270/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
                             <FaLinkedin />
                         </a>
-                        <a href="https://facebook.com/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
+                        <a href="https://web.facebook.com/al.fazle.shifat/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
                             <FaFacebook />
                         </a>
                         <a href="https://twitter.com/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
