@@ -1,20 +1,40 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import "./Banner.css";
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
+import { ChevronDown } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 const Banner = () => {
     return (
-        <section className="min-h-[500px] text-white flex items-center justify-center px-4 md:px-16">
-            <div className="md:max-w-[1300px]  flex flex-col-reverse md:flex-row items-center gap-10 w-full">
-                {/* Left Side */}
-                <div className="w-full md:w-1/2 space-y-5">
-                    <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-gray-400 via-purple-800 to-gray-500 text-transparent bg-clip-text">
-                        Hello, I am <br />Al Fazle Shifat
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+            {/* Background glow effects */}
+            <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-cyan-500/5 dark:bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="relative z-10 max-w-[1200px] mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12 w-full">
+                {/* Text Content */}
+                <motion.div
+                    className="w-full md:w-3/5 space-y-6"
+                    initial={{ opacity: 0, x: -40 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <p className="text-cyan-600 dark:text-cyan-400 text-sm font-semibold tracking-widest uppercase">
+                        Welcome to my portfolio
+                    </p>
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-white leading-tight">
+                        Hi, I'm{" "}
+                        <span className="gradient-text">Al Fazle Shifat</span>
                     </h1>
-                    <h2 className="text-xl md:text-4xl text-gray-600 dark:text-indigo-300">
+                    <h2 className="text-xl md:text-2xl text-cyan-600 dark:text-cyan-400 font-medium">
                         <Typewriter
-                            words={["Web Developer", "Frontend Developer", "Jr. FullStack Developer", "MERN Stack Developer", "UI/UX Designer", "React Developer"]}
+                            words={[
+                                "Full Stack Developer",
+                                "React Developer",
+                                "MERN Stack Developer",
+                                "Frontend Specialist",
+                            ]}
                             loop={true}
                             cursor
                             cursorStyle="|"
@@ -23,41 +43,76 @@ const Banner = () => {
                             delaySpeed={1500}
                         />
                     </h2>
-                    <p className="text-lg text-gray-600 dark:text-gray-300 max-w-md">
-                        I build responsive and interactive web applications with a focus on clean UI, optimized performance, and user-centric design.
+                    <p className="text-lg text-slate-500 dark:text-slate-400 max-w-lg leading-relaxed">
+                        I build responsive, high-performance web applications with clean
+                        UI and modern technologies. Currently working as a Jr. Full Stack
+                        Developer at Potential Inc., South Korea.
                     </p>
-                    {/* Social Links */}
-                    <div className="flex gap-5 mt-4">
-                        <a href="https://github.com/fazleshifat" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
+
+                    {/* CTA Buttons */}
+                    <div className="flex flex-wrap gap-4 pt-2">
+                        <HashLink
+                            smooth
+                            to="/#projects"
+                            className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                        >
+                            View My Work
+                        </HashLink>
+                        <a
+                            href="https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-8 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-cyan-500 dark:hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-all duration-300"
+                        >
+                            Download Resume
+                        </a>
+                    </div>
+
+                    {/* Social Icons */}
+                    <div className="flex gap-5 pt-4">
+                        <a href="https://github.com/fazleshifat" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
                             <FaGithub />
                         </a>
-                        <a href="https://www.linkedin.com/in/fazle-shifat-5490a8270/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
+                        <a href="https://www.linkedin.com/in/fazle-shifat-5490a8270/" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
                             <FaLinkedin />
                         </a>
-                        <a href="https://web.facebook.com/al.fazle.shifat/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
+                        <a href="https://web.facebook.com/al.fazle.shifat/" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
                             <FaFacebook />
                         </a>
-                        <a href="https://twitter.com/" target="_blank" className="text-indigo-950 dark:text-indigo-200 hover:text-indigo-400 text-xl">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
                             <FaTwitter />
                         </a>
                     </div>
-                    {/* Extra Element */}
-                    <div className="inline-block px-4 py-2 mt-4 rounded-full bg-indigo-600 text-sm shadow-md animate-pulse">
-                        Open for Freelance & Remote Jobs
-                    </div>
-                </div>
+                </motion.div>
 
-                {/* Right Side */}
-                <div className="w-full md:w-1/2 flex justify-center relative">
-                    <div className="rounded-full border-4 border-indigo-300 p-1 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 banner-img">
-                        <img
-                            src="/assets/profile.png" // replace with your image path
-                            alt="Al Fazle Shifat"
-                            className="rounded-full object-cover w-96"
-                        />
+                {/* Profile Image */}
+                <motion.div
+                    className="w-full md:w-2/5 pt-15 md:pt-0 flex justify-center"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                    <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-purple-500 rounded-full blur-2xl opacity-15 dark:opacity-20" />
+                        <div className="relative rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-purple-500">
+                            <img
+                                src="/assets/profile2.png"
+                                alt="Al Fazle Shifat"
+                                className="rounded-full object-cover w-62 h-62 md:w-80 md:h-80"
+                            />
+                        </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
+
+            {/* Scroll Indicator */}
+            <motion.div
+                className="absolute bottom-8 left-1/2 -translate-x-1/2"
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+            >
+                <ChevronDown className="text-slate-400 dark:text-slate-500" size={28} />
+            </motion.div>
         </section>
     );
 };

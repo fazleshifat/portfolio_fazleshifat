@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(node -e \"try { require\\(''@iconify/icons-logos/typescript-icon''\\); console.log\\(''typescript-icon: OK''\\); } catch\\(e\\) { console.log\\(''typescript-icon: FAIL''\\); } try { require\\(''@iconify/icons-logos/redux''\\); console.log\\(''redux: OK''\\); } catch\\(e\\) { console.log\\(''redux: FAIL''\\); }\")",
+      "Bash(node -e \"try { require\\(''@iconify/icons-logos/tailwindcss-icon''\\); console.log\\(''tailwindcss-icon: OK''\\); } catch\\(e\\) { console.log\\(''tailwindcss-icon: FAIL - '' + e.message\\); }\")"
+    ]
+  }
+}

@@ -5,11 +5,13 @@ import Footer from '../shared/Footer/Footer';
 
 const MainLayout = () => {
     return (
-        <section>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </section>
+        <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 transition-colors duration-300">
+            <Navbar />
+            <main>
+                <Outlet />
+            </main>
+            <Footer />
+        </div>
     );
 };
 

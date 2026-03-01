@@ -1,49 +1,110 @@
-import React from 'react';
-import ThemeToggle from '../../components/ThemeToggle';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import { HashLink } from 'react-router-hash-link';
+import { Menu, X } from 'lucide-react';
+import ThemeToggle from '../../components/ThemeToggle';
+
+const navItems = [
+    { label: 'Home', to: '/#' },
+    { label: 'About', to: '/#aboutMe' },
+    { label: 'Experience', to: '/#experience' },
+    { label: 'Skills', to: '/#technology' },
+    { label: 'Projects', to: '/#projects' },
+    { label: 'Education', to: '/#education' },
+    { label: 'Contact', to: '/#contact' },
+];
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+    const [mobileOpen, setMobileOpen] = useState(false);
 
-    const links = <>
-        <li><HashLink smooth to="/#">Home</HashLink></li>
-        <li><HashLink smooth to="/#aboutMe">About Me</HashLink></li>
-        <li><HashLink smooth to="/#technology">Technology</HashLink></li>
-        <li><HashLink smooth to="/#projects">Projects</HashLink></li>
-        <li><HashLink smooth to="/#education">Education</HashLink></li>
-        <li><HashLink smooth to="/#experience">Experience</HashLink></li>
-        <li><HashLink smooth to="/#contact">Contact</HashLink></li>
-
-    </>
+    useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 50);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <div className="sticky top-0 z-50 navbar bg-base-100 dark:bg-indigo-900 dark:border-b-2 border-indigo-900 flex items-center justify-between shadow-sm">
-            <div className="flex items-center">
-                <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        <>
+            <nav
+                className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+                    scrolled
+                        ? 'glass-effect shadow-lg shadow-cyan-500/5 dark:shadow-cyan-500/5 py-3'
+                        : 'bg-transparent py-5'
+                }`}
+            >
+                <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between">
+                    <HashLink smooth to="/#" className="flex items-center gap-3">
+                        <img
+                            src="/assets/logo.png"
+                            className="w-10 h-10 rounded-full bg-white"
+                            alt="logo"
+                        />
+                        <span className="text-xl font-bold text-slate-800 dark:text-white font-[var(--font-heading)]">
+                            Shifat
+                        </span>
+                    </HashLink>
+
+                    <div className="hidden lg:flex items-center gap-8">
+                        {navItems.map((item) => (
+                            <HashLink
+                                key={item.label}
+                                smooth
+                                to={item.to}
+                                className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-cyan-500 dark:after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full"
+                            >
+                                {item.label}
+                            </HashLink>
+                        ))}
                     </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        {links}
-                    </ul>
+
+                    <div className="flex items-center gap-3">
+                        <ThemeToggle />
+                        <Link
+                            target="_blank"
+                            to="https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing"
+                            className="hidden sm:inline-flex px-5 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                        >
+                            Resume
+                        </Link>
+
+                        <button
+                            className="lg:hidden text-slate-600 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
+                            onClick={() => setMobileOpen(!mobileOpen)}
+                        >
+                            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
+                    </div>
                 </div>
-                <Link to='/#'>
-                    <div>
-                        <img src="/assets/logo.png" className='w-14 rounded-full bg-white dark:bg-indigo-400' alt="logo" />
-                    </div>
+            </nav>
+
+            {/* Mobile Menu Overlay */}
+            <div
+                className={`fixed inset-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md flex flex-col items-center justify-center gap-8 transition-all duration-300 ${
+                    mobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                }`}
+            >
+                {navItems.map((item) => (
+                    <HashLink
+                        key={item.label}
+                        smooth
+                        to={item.to}
+                        onClick={() => setMobileOpen(false)}
+                        className="text-2xl font-semibold text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"
+                    >
+                        {item.label}
+                    </HashLink>
+                ))}
+                <Link
+                    target="_blank"
+                    to="https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing"
+                    className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                    onClick={() => setMobileOpen(false)}
+                >
+                    Resume
                 </Link>
             </div>
-            <div className="flex items-center gap-3">
-                <ul className="hidden md:flex text-md font-semibold text-indigo-800 dark:text-indigo-300 gap-5">
-                    {links}
-                </ul>
-
-                <ThemeToggle></ThemeToggle>
-                <Link target='_blank' to='https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing' className="btn rounded-full btn-outline">Resume</Link>
-            </div>
-        </div>
+        </>
     );
 };
 
