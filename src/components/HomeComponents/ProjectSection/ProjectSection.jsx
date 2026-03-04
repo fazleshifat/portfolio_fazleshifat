@@ -30,19 +30,11 @@ const projects = [
     },
     {
         name: "Coaching Record",
-        image: "https://picsum.photos/seed/coaching/600/400",
+        image: "/assets/coaching-record.png",
         slug: "coaching-record",
         shortDescription: "Athletic sports tracking app for coaches, students, and guardians to monitor progress and generate reports.",
         tech: ["React", "Node.js", "MongoDB", "Firebase"],
-        live: "#",
-    },
-    {
-        name: "Cryppo",
-        image: "https://picsum.photos/seed/cryppo/600/400",
-        slug: "cryppo",
-        shortDescription: "Cryptocurrency platform with live market updates, portfolio tracking, and investment insights.",
-        tech: ["React", "Redux", "Node.js", "MongoDB"],
-        live: "#",
+        live: "https://mobile.thecoachingrecord.com",
     },
 ];
 

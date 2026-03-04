@@ -49,30 +49,16 @@ const projects = [
     {
         slug: "coaching-record",
         name: "Coaching Record - Athletic Sports Tracker",
-        image: "https://picsum.photos/seed/coaching/800/450",
+        image: "/assets/coaching-record.png",
         techStack: ["React", "Node.js", "MongoDB", "Firebase", "TailwindCSS"],
         description:
             "Coaching Record is an athletic sports tracking application designed for coaches, students, and guardians. It enables tracking of progress across multiple sports, session management, performance reporting, and communication between coaches and guardians.",
-        liveLink: "#",
+        liveLink: "https://mobile.thecoachingrecord.com",
         githubClient: "#",
         challenges:
             "Building a multi-role system with different dashboards for coaches, students, and guardians while keeping the data synchronized and generating meaningful progress reports.",
         improvements:
             "Planning to add video analysis integration, AI-powered performance insights, and a mobile app for on-field tracking.",
-    },
-    {
-        slug: "cryppo",
-        name: "Cryppo - Cryptocurrency Platform",
-        image: "https://picsum.photos/seed/cryppo/800/450",
-        techStack: ["React", "Redux", "Node.js", "MongoDB", "TailwindCSS"],
-        description:
-            "Cryppo is a cryptocurrency platform providing live market updates, portfolio tracking, and investment insights. Users can monitor real-time price changes, manage their crypto portfolios, and access market analysis tools.",
-        liveLink: "#",
-        githubClient: "#",
-        challenges:
-            "Implementing real-time price updates with WebSocket connections and building accurate portfolio valuation with multiple currency support.",
-        improvements:
-            "Future plans include adding trading functionality, price alerts, social trading features, and advanced charting tools.",
     },
 ];
 
