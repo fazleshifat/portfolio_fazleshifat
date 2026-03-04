@@ -21,7 +21,7 @@ const Footer = () => {
                     {/* Branding */}
                     <div>
                         <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 font-[var(--font-heading)]">
-                            Al Fazle Shifat
+                            MD AL FAZLE SHIFAT
                         </h3>
                         <p className="text-slate-500 text-sm mb-5 leading-relaxed">
                             Full Stack Developer specializing in building modern web
@@ -88,7 +88,7 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="border-t border-slate-200 dark:border-slate-800 py-5">
                 <p className="text-center text-slate-400 dark:text-slate-600 text-sm">
-                    &copy; {new Date().getFullYear()} Al Fazle Shifat. All rights reserved.
+                    &copy; {new Date().getFullYear()} MD AL FAZLE SHIFAT. All rights reserved.
                 </p>
             </div>
         </footer>

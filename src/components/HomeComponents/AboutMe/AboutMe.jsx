@@ -33,7 +33,7 @@ const AboutMe = () => {
                         <div className="absolute -inset-2 bg-gradient-to-tr from-cyan-500 to-purple-500 rounded-2xl blur-lg opacity-15 dark:opacity-20" />
                         <img
                             src="/assets/aboutme.jpg"
-                            alt="About Al Fazle Shifat"
+                            alt="About MD AL FAZLE SHIFAT"
                             className="relative rounded-2xl object-cover w-full max-w-md shadow-2xl shadow-black/10 dark:shadow-black/30"
                         />
                     </div>
@@ -50,7 +50,7 @@ const AboutMe = () => {
                         Passionate Full Stack Developer
                     </h3>
                     <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed mb-6">
-                        I'm <span className="text-cyan-600 dark:text-cyan-400 font-semibold">Al Fazle Shifat</span>,
+                        I'm <span className="text-cyan-600 dark:text-cyan-400 font-semibold">MD AL FAZLE SHIFAT</span>,
                         a Full Stack Web Developer from Bangladesh, currently working at
                         Potential Inc. in South Korea. I specialize in building fast backend
                         systems, scalable user experiences, and user-friendly interfaces

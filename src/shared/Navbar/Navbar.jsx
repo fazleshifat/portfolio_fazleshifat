@@ -41,7 +41,7 @@ const Navbar = () => {
                             alt="logo"
                         />
                         <span className="text-xl font-bold text-slate-800 dark:text-white font-[var(--font-heading)]">
-                            Shifat
+                            SHIFAT
                         </span>
                     </HashLink>
 

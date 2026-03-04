@@ -21,11 +21,11 @@ const projects = [
     {
         slug: "Trustix",
         name: "Trustix - Football League Ticket Management",
-        image: "https://picsum.photos/seed/trustix/800/450",
-        techStack: ["React", "Node.js", "MongoDB", "Express.js", "TailwindCSS"],
+        image: "/assets/trustix.png",
+        techStack: ["React", "Node.js", "TailwindCSS"],
         description:
             "Trustix is a B2B football league ticket management platform designed for organizers, venues, and ticket distributors. It streamlines ticket creation, distribution, seat allocation, and real-time sales tracking for football leagues and tournaments.",
-        liveLink: "#",
+        liveLink: "https://trustix.uk/",
         githubClient: "#",
         challenges:
             "Building a real-time seat allocation system and managing concurrent ticket purchases across multiple venues were the primary challenges.",
@@ -35,11 +35,11 @@ const projects = [
     {
         slug: "ivorymade",
         name: "Ivorymade - Dental Equipment B2B Marketplace",
-        image: "https://picsum.photos/seed/ivorymade/800/450",
+        image: "/assets/ivorymade.png",
         techStack: ["React", "Express.js", "MongoDB", "TailwindCSS", "Firebase Auth"],
         description:
             "Ivorymade is a B2B dental exercise equipment selling platform that connects dentists with sellers. It features product catalogs, order management, dentist-seller communication, and a streamlined procurement system for dental practices.",
-        liveLink: "#",
+        liveLink: "https://ivorymade.com/",
         githubClient: "#",
         challenges:
             "Designing the multi-role system for dentists and sellers with appropriate access controls and building a specialized product categorization for dental equipment.",

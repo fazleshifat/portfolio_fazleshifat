@@ -6,7 +6,7 @@ const educationData = [
     {
         title: "Diploma in Engineering",
         subject: "Computer Science & Technology",
-        institution: "Feni Computer Institute",
+        institution: "Feni Govt. Computer Institute",
         duration: "2024",
         cgpa: "3.41",
         description:
@@ -18,7 +18,7 @@ const educationData = [
         duration: "2019",
         cgpa: "5.00",
         description:
-            "Completed SSC with excellent results, focused on science and computer studies.",
+            "Completed SSC, focused on science and computer studies.",
     },
 ];
 

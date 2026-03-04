@@ -2,7 +2,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, MapPin } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 
 const Banner = () => {
@@ -20,12 +20,13 @@ const Banner = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <p className="text-cyan-600 dark:text-cyan-400 text-sm font-semibold tracking-widest uppercase">
-                        Welcome to my portfolio
-                    </p>
+                    <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
+                        <MapPin size={16} className="text-cyan-600 dark:text-cyan-400" />
+                        <span>Chattogram, Bangladesh</span>
+                    </div>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-white leading-tight">
                         Hi, I'm{" "}
-                        <span className="gradient-text">Al Fazle Shifat</span>
+                        <span className="gradient-text">MD AL FAZLE SHIFAT</span>
                     </h1>
                     <h2 className="text-xl md:text-2xl text-cyan-600 dark:text-cyan-400 font-medium">
                         <Typewriter
@@ -97,7 +98,7 @@ const Banner = () => {
                         <div className="relative rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-purple-500">
                             <img
                                 src="/assets/profile2.png"
-                                alt="Al Fazle Shifat"
+                                alt="MD AL FAZLE SHIFAT"
                                 className="rounded-full object-cover w-62 h-62 md:w-80 md:h-80"
                             />
                         </div>
