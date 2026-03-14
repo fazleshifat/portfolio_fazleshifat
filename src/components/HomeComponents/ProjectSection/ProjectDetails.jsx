@@ -8,7 +8,7 @@ const projects = [
         slug: "venmart",
         name: "Venmart - E-commerce Marketplace",
         image: "/assets/venmart.png",
-        techStack: ["React", "Node.js", "MongoDB", "Express.js", "TailwindCSS", "Stripe"],
+        techStack: ["React", "Node.js", "MongoDB", "ExpressJS", "TailwindCSS", "Stripe"],
         description:
             "Venmart is a modern e-commerce marketplace allowing vendors to sell products online with secure payments and smooth user experience. Features include product listings, cart management, order tracking, and Stripe-powered checkout.",
         liveLink: "https://venmart.netlify.app",
@@ -22,41 +22,58 @@ const projects = [
         slug: "Trustix",
         name: "Trustix - Football League Ticket Management",
         image: "/assets/trustix.png",
-        techStack: ["React", "Node.js", "TailwindCSS"],
+        techStack: ["React", "TailwindCSS", "Redux", "ChartJS"],
+        role: "Frontend Developer",
         description:
             "Trustix is a B2B football league ticket management platform designed for organizers, venues, and ticket distributors. It streamlines ticket creation, distribution, seat allocation, and real-time sales tracking for football leagues and tournaments.",
         liveLink: "https://trustix.uk/",
         githubClient: "#",
         challenges:
-            "Building a real-time seat allocation system and managing concurrent ticket purchases across multiple venues were the primary challenges.",
+            "Real-time ticket management with live updates across multiple venues was the core challenge. Implementing QR code generation and scanning for single-ticket stadium access required tight integration with the ticketing flow. Building Excel import/export functionality for bulk management of users, tickets, and suppliers added significant complexity to the data handling layer.",
         improvements:
-            "Planning to add QR-code based ticket validation, mobile app for ticket scanning, and analytics dashboards for organizers.",
+            "Planning to add mobile app for on-site ticket scanning, advanced analytics dashboards for organizers, and automated supplier reporting.",
     },
     {
         slug: "ivorymade",
         name: "Ivorymade - Dental Equipment B2B Marketplace",
         image: "/assets/ivorymade.png",
-        techStack: ["React", "Express.js", "MongoDB", "TailwindCSS", "Firebase Auth"],
+        techStack: ["React", "TailwindCSS", "Redux", "Calendly", "Channel Talk"],
+        role: "Frontend Developer",
         description:
-            "Ivorymade is a B2B dental exercise equipment selling platform that connects dentists with sellers. It features product catalogs, order management, dentist-seller communication, and a streamlined procurement system for dental practices.",
+            "Ivorymade is a B2B dental exercise equipment selling platform that connects dentists with sellers. It features product catalogs, order management, a custom-built real-time chat system for dentist-seller communication, Channel Talk integration for booking meetings, and a streamlined procurement system for dental practices.",
         liveLink: "https://ivorymade.com/",
         githubClient: "#",
         challenges:
-            "Designing the multi-role system for dentists and sellers with appropriate access controls and building a specialized product categorization for dental equipment.",
+            "Initially we attempted to fully integrate Channel Talk's API with our own API key directly into the website. We achieved roughly 80% of the integration, but due to major dependency barriers and a tight deadline, we pivoted to building a custom chat system from scratch. The result is a fully functional real-time chat where users can send messages and admins can reply instantly — supporting text, images, and file sharing. Managing the real-time chat state and file uploads was a significant engineering effort.",
         improvements:
             "Future plans include adding subscription-based ordering, inventory management for sellers, and integration with dental practice management software.",
+    },
+    {
+        slug: "dropvein",
+        name: "Dropvein - Blood Donation Platform",
+        image: "/assets/dropvein.png",
+        techStack: ["React", "Node.js", "MongoDB", "ExpressJS", "Stripe", "Channel Talk", "Calendly", "TailwindCSS"],
+        description:
+            "Dropvein is a blood donation platform where users can donate blood and request donations. It features Stripe-powered payments for donations, Calendly integration for booking meetings, and Channel Talk for real-time chat support. Admins can manage and oversee all donation requests and activities.",
+        liveLink: "https://dropvein.netlify.app",
+        githubClient: "#",
+        challenges:
+            "Integrating multiple third-party services (Stripe, Calendly, Channel Talk) into a cohesive user experience and building a reliable admin dashboard for managing donation requests.",
+        improvements:
+            "Future plans include adding blood type matching, location-based donor search, notification alerts for urgent requests, and a mobile application.",
     },
     {
         slug: "coaching-record",
         name: "Coaching Record - Athletic Sports Tracker",
         image: "/assets/coaching-record.png",
-        techStack: ["React", "Node.js", "MongoDB", "Firebase", "TailwindCSS"],
+        techStack: ["React", "TailwindCSS", "Redux"],
+        role: "Frontend Developer",
         description:
-            "Coaching Record is an athletic sports tracking application designed for coaches, students, and guardians. It enables tracking of progress across multiple sports, session management, performance reporting, and communication between coaches and guardians.",
+            "Coaching Record is an athletic sports tracking application designed for coaches, students, and guardians. It enables real-time tracking of athlete progress across multiple sports, session management, performance reporting, and communication between coaches and guardians.",
         liveLink: "https://mobile.thecoachingrecord.com",
         githubClient: "#",
         challenges:
-            "Building a multi-role system with different dashboards for coaches, students, and guardians while keeping the data synchronized and generating meaningful progress reports.",
+            "The biggest challenge was handling real-time data recording for athletes as a coach. The system needed to work seamlessly across three distinct roles — coach, parent, and athlete — each with their own dashboard and data views. Keeping all real-time data synchronized across these roles while ensuring each user only sees their authorized data required careful state management and API design on the frontend.",
         improvements:
             "Planning to add video analysis integration, AI-powered performance insights, and a mobile app for on-field tracking.",
     },

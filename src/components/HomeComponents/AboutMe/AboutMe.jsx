@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Zap, Maximize, Users, Rocket } from "lucide-react";
+import { Zap, Maximize, Rocket, Bot } from "lucide-react";
 
 const highlights = [
-    { icon: <Zap size={22} />, label: "Fast Backend", desc: "Optimized APIs" },
-    { icon: <Maximize size={22} />, label: "Scalable UX", desc: "Grows with users" },
-    { icon: <Users size={22} />, label: "User Friendly", desc: "Intuitive design" },
-    { icon: <Rocket size={22} />, label: "5+ Projects", desc: "Delivered" },
+    { icon: <Bot size={22} />, label: "AI-Native Dev" },
+    { icon: <Zap size={22} />, label: "Fast Delivery", desc: "Scratch to deploy" },
+    { icon: <Maximize size={22} />, label: "Easy, Clean & Fast UX", desc: "Grows with users" },
+    { icon: <Rocket size={22} />, label: "3+ Projects", desc: "Delivered" },
 ];
 
 const AboutMe = () => {
@@ -47,20 +47,21 @@ const AboutMe = () => {
                     transition={{ duration: 0.7 }}
                 >
                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-6">
-                        Passionate Full Stack Developer
+                        AI-Native Full Stack Developer
                     </h3>
                     <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed mb-6">
                         I'm <span className="text-cyan-600 dark:text-cyan-400 font-semibold">MD AL FAZLE SHIFAT</span>,
-                        a Full Stack Web Developer from Bangladesh, currently working at
-                        Potential Inc. in South Korea. I specialize in building fast backend
-                        systems, scalable user experiences, and user-friendly interfaces
-                        using the MERN stack.
+                        an AI-native Full Stack Developer from Bangladesh, currently working at
+                        Potential Inc. in South Korea. I build projects from scratch to delivery
+                        using Cursor and Claude leveraging AI agents, custom commands, and
+                        smart workflows to compress multi-step processes into single actions
+                        and dramatically reduce development timelines.
                     </p>
                     <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed mb-8">
-                        I focus on delivering optimized API performance, designing interfaces
-                        that scale gracefully with growing user bases, and crafting intuitive
-                        experiences that keep users engaged. From React frontends to Node.js
-                        backends — every layer is built with quality in mind.
+                        Experienced in working with AI-native tools to solve problems fast and
+                        ship quality products. From React frontends to Node.js backends I use
+                        the MERN stack alongside modern AI tooling to build scalable, user-friendly
+                        applications with clean code and optimized performance.
                     </p>
 
                     {/* Highlight Cards */}

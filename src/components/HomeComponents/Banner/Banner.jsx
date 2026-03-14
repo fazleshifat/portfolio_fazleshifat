@@ -32,9 +32,9 @@ const Banner = () => {
                         <Typewriter
                             words={[
                                 "Full Stack Developer",
+                                "AI-Native Developer",
                                 "React Developer",
                                 "MERN Stack Developer",
-                                "Frontend Specialist",
                             ]}
                             loop={true}
                             cursor
@@ -45,8 +45,7 @@ const Banner = () => {
                         />
                     </h2>
                     <p className="text-lg text-slate-500 dark:text-slate-400 max-w-lg leading-relaxed">
-                        I build responsive, high-performance web applications with clean
-                        UI and modern technologies. Currently working as a Jr. Full Stack
+                       AI native Full-Stack Developer delivering complete web solutions with modern technologies from scratch to production. Currently working as a Jr. Full Stack
                         Developer at Potential Inc., South Korea.
                     </p>
 
