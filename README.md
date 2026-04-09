@@ -6,6 +6,6 @@ This is my personal developer portfolio website, built with the MERN stack and m
 
 ## 🚀 Live Demo
 
-🌐 [View Portfolio Live](https://fazleshifat.netlify.app)
+🌐 [View]([https://fazleshifat.netlify.app](https://alfazleshifat.netlify.app/))
 
 ---
