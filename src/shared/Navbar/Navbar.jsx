@@ -67,6 +67,13 @@ const Navbar = () => {
                         >
                             Resume
                         </Link>
+                        <Link
+                            target="_blank"
+                            to="https://drive.google.com/file/d/1Kkj7FX8ge3sbxFXNBi32kLz0o3Nx5QZG/view?usp=sharing"
+                            className="hidden sm:inline-flex px-5 py-2 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-cyan-500 dark:hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 text-sm font-semibold transition-all duration-300"
+                        >
+                            CV
+                        </Link>
 
                         <button
                             className="lg:hidden text-slate-600 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
@@ -102,6 +109,14 @@ const Navbar = () => {
                     onClick={() => setMobileOpen(false)}
                 >
                     Resume
+                </Link>
+                <Link
+                    target="_blank"
+                    to="https://drive.google.com/file/d/1Kkj7FX8ge3sbxFXNBi32kLz0o3Nx5QZG/view?usp=sharing"
+                    className="px-8 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-cyan-500 dark:hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-all duration-300"
+                    onClick={() => setMobileOpen(false)}
+                >
+                    CV
                 </Link>
             </div>
         </>

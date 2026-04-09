@@ -64,7 +64,15 @@ const Banner = () => {
                             rel="noopener noreferrer"
                             className="px-8 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-cyan-500 dark:hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-all duration-300"
                         >
-                            Download Resume
+                            Resume
+                        </a>
+                        <a
+                            href="https://drive.google.com/file/d/1Kkj7FX8ge3sbxFXNBi32kLz0o3Nx5QZG/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-8 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-cyan-500 dark:hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-all duration-300"
+                        >
+                            CV
                         </a>
                     </div>
 
