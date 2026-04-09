@@ -31,7 +31,7 @@ const Footer = () => {
                             <a href="https://github.com/fazleshifat" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-cyan-100 dark:hover:bg-cyan-500/10 transition-all">
                                 <FaGithub size={16} />
                             </a>
-                            <a href="https://www.linkedin.com/in/fazle-shifat-5490a8270/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-cyan-100 dark:hover:bg-cyan-500/10 transition-all">
+                            <a href="https://www.linkedin.com/in/md-al-fazle-shifat-a514413ba/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-cyan-100 dark:hover:bg-cyan-500/10 transition-all">
                                 <FaLinkedin size={16} />
                             </a>
                             <a href="https://web.facebook.com/al.fazle.shifat/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-cyan-100 dark:hover:bg-cyan-500/10 transition-all">

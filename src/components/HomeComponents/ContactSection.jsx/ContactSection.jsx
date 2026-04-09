@@ -104,7 +104,7 @@ const ContactSection = () => {
                                 <FaGithub size={18} />
                             </a>
                             <a
-                                href="https://www.linkedin.com/in/fazle-shifat-5490a8270/"
+                                href="https://www.linkedin.com/in/md-al-fazle-shifat-a514413ba/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-700/50 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-cyan-100 dark:hover:bg-cyan-500/10 transition-all"

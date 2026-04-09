@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Briefcase } from "lucide-react";
+import { Briefcase, ExternalLink } from "lucide-react";
 
 const experiences = [
     {
@@ -10,19 +10,30 @@ const experiences = [
         period: "Aug 2025 - Present",
         type: "Full-time",
         description:
-            "Developing and maintaining full-stack web applications using React, Node.js, and MongoDB. Collaborating with cross-functional teams to deliver scalable, production-ready solutions.",
-        technologies: ["React", "Node.js", "MongoDB", "Express.js", "TypeScript", "Tailwind CSS"],
+            "Delivered 2 production-ready projects collaborating closely with project managers, backend engineers, and designers. Built and maintained full-stack web applications from concept to deployment.",
+        companyLink: "https://potentialai.com/",
         current: true,
     },
     {
+        role: "Intern Frontend Developer",
+        company: "Potential Inc.",
+        location: "South Korea",
+        period: "May 2025 - Aug 2025",
+        type: "Internship",
+        description:
+            "Completed 2 client-facing projects collaborating with project managers, backend developers, and designers. Focused on meeting tight deadlines and client requirements through smooth planning, from PRD to delivery.",
+        companyLink: "https://potentialai.com/",
+        current: false,
+    },
+    {
         role: "Customer Relationship Officer",
-        company: "Synergy Solutions",
+        company: "Synergy Solutions BD",
         location: "Dhaka, Bangladesh",
         period: "Jul 2024 - Dec 2024",
         type: "Full-time",
         description:
             "Managed client relationships and supported digital transformation initiatives. Bridged communication between technical teams and clients to ensure project alignment and satisfaction.",
-        technologies: [],
+        companyLink: "https://web.facebook.com/synergysolutionsbd?_rdc=1&_rdr#",
         current: false,
     },
     {
@@ -33,7 +44,7 @@ const experiences = [
         type: "Freelance",
         description:
             "Created engaging scripts for digital content, marketing campaigns, and video productions. Developed compelling narratives and collaborated with creative teams to deliver impactful storytelling.",
-        technologies: [],
+        companyLink: "https://web.facebook.com/mayafilmsbd",
         current: false,
     },
 ];
@@ -99,17 +110,15 @@ const ExperienceSection = () => {
                                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">
                                     {exp.description}
                                 </p>
-                                {exp.technologies.length > 0 && (
-                                    <div className="flex flex-wrap gap-2">
-                                        {exp.technologies.map((tech, j) => (
-                                            <span
-                                                key={j}
-                                                className="bg-slate-100 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300 text-xs px-2.5 py-1 rounded"
-                                            >
-                                                {tech}
-                                            </span>
-                                        ))}
-                                    </div>
+                                {exp.companyLink && (
+                                    <a
+                                        href={exp.companyLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-cyan-600 dark:text-cyan-400 text-sm font-medium hover:underline"
+                                    >
+                                        Visit Company <ExternalLink size={14} />
+                                    </a>
                                 )}
                             </div>
                         </div>

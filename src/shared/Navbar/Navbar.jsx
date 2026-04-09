@@ -62,7 +62,7 @@ const Navbar = () => {
                         <ThemeToggle />
                         <Link
                             target="_blank"
-                            to="https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing"
+                            to="https://drive.google.com/file/d/1ezF-sOLehhfV4EY-lvlkvHBcXvw1smuL/view?usp=drive_link"
                             className="hidden sm:inline-flex px-5 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
                         >
                             Resume
@@ -97,7 +97,7 @@ const Navbar = () => {
                 ))}
                 <Link
                     target="_blank"
-                    to="https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing"
+                    to="https://drive.google.com/file/d/1ezF-sOLehhfV4EY-lvlkvHBcXvw1smuL/view?usp=drive_link"
                     className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
                     onClick={() => setMobileOpen(false)}
                 >

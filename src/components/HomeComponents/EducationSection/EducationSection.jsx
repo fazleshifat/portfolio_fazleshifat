@@ -9,16 +9,28 @@ const educationData = [
         institution: "Feni Govt. Computer Institute",
         duration: "2024",
         cgpa: "3.41",
+        cgpaLabel: "CGPA",
         description:
-            "Focused on web development, algorithms, and system design. Participated in programming contests and contributed to open-source projects.",
+            "Engaged in ICT club management, programme arrangement, IT courses, and sessions.",
+        activities: [
+            "FCI ICT Club",
+            "FCI Cultural Club",
+            "FCI Rover Scout Group",
+        ],
     },
     {
         title: "Secondary School Certificate (SSC)",
-        institution: "Maruf Model Primary & High School",
+        institution: "Maruwf Model Primary & High School",
         duration: "2019",
         cgpa: "5.00",
+        cgpaLabel: "GPA",
         description:
-            "Completed SSC, focused on science and computer studies.",
+            "Completed SSC, focused on science and computer studies. Attached with curricular activities.",
+        activities: [
+            "Debating Club",
+            "Maruwf Model High School Scout",
+            "Maruwf Model Primary School Scout",
+        ],
     },
 ];
 
@@ -56,7 +68,7 @@ const EducationSection = () => {
                                 <span className="text-slate-500 dark:text-slate-400 text-sm">{item.duration}</span>
                                 {item.cgpa && (
                                     <span className="bg-cyan-100 dark:bg-cyan-500/10 text-cyan-700 dark:text-cyan-400 text-xs font-medium px-3 py-1 rounded-full ml-auto">
-                                        CGPA: {item.cgpa}
+                                        {item.cgpaLabel || "CGPA"}: {item.cgpa}
                                     </span>
                                 )}
                             </div>
@@ -72,6 +84,16 @@ const EducationSection = () => {
                             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
                                 {item.description}
                             </p>
+                            {item.activities && item.activities.length > 0 && (
+                                <ul className="mt-3 space-y-1.5">
+                                    {item.activities.map((activity, j) => (
+                                        <li key={j} className="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 dark:bg-cyan-400 shrink-0" />
+                                            {activity}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     </motion.div>
                 ))}

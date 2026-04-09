@@ -59,7 +59,7 @@ const Banner = () => {
                             View My Work
                         </HashLink>
                         <a
-                            href="https://drive.google.com/file/d/1FJHmHs7UcL7b-8ixhwQ5RIGJiI-mya2l/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1ezF-sOLehhfV4EY-lvlkvHBcXvw1smuL/view?usp=drive_link"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-cyan-500 dark:hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold transition-all duration-300"
@@ -73,7 +73,7 @@ const Banner = () => {
                         <a href="https://github.com/fazleshifat" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
                             <FaGithub />
                         </a>
-                        <a href="https://www.linkedin.com/in/fazle-shifat-5490a8270/" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
+                        <a href="https://www.linkedin.com/in/md-al-fazle-shifat-a514413ba/" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
                             <FaLinkedin />
                         </a>
                         <a href="https://web.facebook.com/al.fazle.shifat/" target="_blank" rel="noopener noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-xl transition-colors duration-300">
